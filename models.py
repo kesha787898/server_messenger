@@ -1,35 +1,34 @@
 from init import db
-from datetime import datetime
-from flask import jsonify
 
-class User(db.Model):
+
+class Users(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    username = db.Column(db.String(80), unique=True)
-    password = db.Column(db.String(120), unique=False)
+    username = db.Column(db.String(32), unique=True)
+    password = db.Column(db.String(32), unique=False)
+    phone = db.Column(db.String(32), unique=True)
+    email = db.Column(db.String(32), unique=True)
+    token = db.Column(db.String(32), unique=True)
 
-    def __init__(self, username, password):
-        self.username = username
-        self.password = password
 
-
-class message(db.Model):
+class Messages(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     text = db.Column(db.String(), unique=False)
     category = db.Column(db.String(), unique=False)
-    time = db.Column(db.DateTime(), unique=False)
-    #from
-    #to
+    datetime = db.Column(db.DateTime(), unique=False)
+    from_id = None
+    to_id = None
+    is_read = db.Column(db.Boolean(), unique=False)
 
 
+class Tags(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(), unique=False)
 
-    def __init__(self, text, category):
-        self.text = text
-        self.category = category
-        self.category = datetime.now()
-    def jsonify(self):
-        return jsonify(id=self.id,
-                       text=self.text,
-                       category=self.category,
-                       time=self.time
-                       #,from=self.from,#to=self.to
-                       )
+
+tags_users = None
+'''db.Table('tags',
+                      db.Column('tag_id', db.Integer, db.ForeignKey('tag.id', ondelete='CASCADE')),
+                      db.Column('post_id', db.Integer, db.ForeignKey('post.id', ondelete='CASCADE')),
+                      db.PrimaryKeyConstraint('tag_id', 'post_id')
+                      )'''
+# все неопределенные поля это заглушки
