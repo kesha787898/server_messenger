@@ -32,3 +32,6 @@ tags_users = None
                       db.PrimaryKeyConstraint('tag_id', 'post_id')
                       )'''
 # все неопределенные поля это заглушки
+
+
+db.create_all()
