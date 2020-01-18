@@ -6,15 +6,13 @@ from email_module import send_email
 
 unconfirmed_users = dict()
 
-code_errors = {-1: 'Everything is OK', 0: 'unknown exseption', 1: 'Wrong confirm key', 2: 'Email aready confimed',
+code_errors = {-1: 'Everything is OK', 0: 'unknown exception', 1: 'Wrong confirm key', 2: 'Email aready confimed',
                3: 'Please try to confirm again', 4: '', 5: ''}
 
 
 @app.route("/register", methods=['POST'])
 def register():
-    print('1')
     email = request.args.get('email')
-    print(email)
     user = models.Users(
         username=request.args.get('username'),
         password=request.args.get('password'),
@@ -48,7 +46,7 @@ def confirm_user():
 
             code_error = 1
     else:
-        if 'Email aready confimed':
+        if db.session.query(models.Users).filter(models.Users.email==email).all():
             code_error = 2
         else:
             code_error = 3

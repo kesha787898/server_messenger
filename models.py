@@ -18,6 +18,7 @@ class Messages(db.Model):
     from_id = None
     to_id = None
     is_read = db.Column(db.Boolean(), unique=False)
+    is_send = db.Column(db.Boolean(), unique=False)
 
 
 class Tags(db.Model):
