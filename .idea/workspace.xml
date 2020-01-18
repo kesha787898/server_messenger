@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f070445c-4094-4152-b06d-175802d097e1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/email_module.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/email_module.py" beforeDir="false" afterPath="$PROJECT_DIR$/email_module.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/endpoints.py" beforeDir="false" afterPath="$PROJECT_DIR$/endpoints.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +138,21 @@
       <option name="project" value="LOCAL" />
       <updated>1579348383346</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added registration &#10;added confirming by email">
+      <created>1579364661979</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1579364661979</updated>
+    </task>
+    <task id="LOCAL-00006" summary="added registration &#10;added confirming by email">
+      <created>1579364763102</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1579364763102</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -157,7 +172,8 @@
     <MESSAGE value="add models&#10;add init file" />
     <MESSAGE value="changed models&#10;add endpoints file" />
     <MESSAGE value="added signup" />
-    <option name="LAST_COMMIT_MESSAGE" value="added signup" />
+    <MESSAGE value="added registration &#10;added confirming by email" />
+    <option name="LAST_COMMIT_MESSAGE" value="added registration &#10;added confirming by email" />
   </component>
   <component name="WindowStateProjectService">
     <state x="453" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579032391990">
@@ -176,10 +192,10 @@
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="669" y="160" width="642" height="794" key="#models/70.27.1850.1053@70.27.1850.1053" timestamp="1579031354890" />
-    <state x="594" y="174" width="796" height="810" key="CommitChangelistDialog2" timestamp="1579364661550">
+    <state x="594" y="174" width="796" height="810" key="CommitChangelistDialog2" timestamp="1579364762988">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state x="594" y="174" width="796" height="810" key="CommitChangelistDialog2/70.27.1850.1053@70.27.1850.1053" timestamp="1579364661550" />
+    <state x="594" y="174" width="796" height="810" key="CommitChangelistDialog2/70.27.1850.1053@70.27.1850.1053" timestamp="1579364762988" />
     <state x="170" y="127" width="1650" height="853" key="DiffContextDialog" timestamp="1579033361256">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
@@ -188,22 +204,22 @@
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="778" y="315" width="424" height="491" key="FileChooserDialogImpl/70.27.1850.1053@70.27.1850.1053" timestamp="1579033303578" />
-    <state width="1827" height="275" key="GridCell.Tab.0.bottom" timestamp="1579364566875">
+    <state width="1827" height="275" key="GridCell.Tab.0.bottom" timestamp="1579364882122">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state width="1827" height="275" key="GridCell.Tab.0.bottom/70.27.1850.1053@70.27.1850.1053" timestamp="1579364566875" />
-    <state width="1827" height="275" key="GridCell.Tab.0.center" timestamp="1579364566873">
+    <state width="1827" height="275" key="GridCell.Tab.0.bottom/70.27.1850.1053@70.27.1850.1053" timestamp="1579364882122" />
+    <state width="1827" height="275" key="GridCell.Tab.0.center" timestamp="1579364882121">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state width="1827" height="275" key="GridCell.Tab.0.center/70.27.1850.1053@70.27.1850.1053" timestamp="1579364566873" />
-    <state width="1827" height="275" key="GridCell.Tab.0.left" timestamp="1579364566872">
+    <state width="1827" height="275" key="GridCell.Tab.0.center/70.27.1850.1053@70.27.1850.1053" timestamp="1579364882121" />
+    <state width="1827" height="275" key="GridCell.Tab.0.left" timestamp="1579364882120">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state width="1827" height="275" key="GridCell.Tab.0.left/70.27.1850.1053@70.27.1850.1053" timestamp="1579364566872" />
-    <state width="1827" height="275" key="GridCell.Tab.0.right" timestamp="1579364566874">
+    <state width="1827" height="275" key="GridCell.Tab.0.left/70.27.1850.1053@70.27.1850.1053" timestamp="1579364882120" />
+    <state width="1827" height="275" key="GridCell.Tab.0.right" timestamp="1579364882121">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state width="1827" height="275" key="GridCell.Tab.0.right/70.27.1850.1053@70.27.1850.1053" timestamp="1579364566874" />
+    <state width="1827" height="275" key="GridCell.Tab.0.right/70.27.1850.1053@70.27.1850.1053" timestamp="1579364882121" />
     <state width="1827" height="340" key="GridCell.Tab.1.bottom" timestamp="1579361266351">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
@@ -224,10 +240,10 @@
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="484" y="188" width="1022" height="737" key="SettingsEditor/70.27.1850.1053@70.27.1850.1053" timestamp="1579033344898" />
-    <state x="590" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1579364684392">
+    <state x="590" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1579364765634">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state x="590" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/70.27.1850.1053@70.27.1850.1053" timestamp="1579364684392" />
+    <state x="590" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/70.27.1850.1053@70.27.1850.1053" timestamp="1579364765634" />
     <state x="651" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1579033265786">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>

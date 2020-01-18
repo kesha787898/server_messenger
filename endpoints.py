@@ -24,12 +24,12 @@ def register():
     )
     unconfirmed_users[email] = (send_email(request.args.get('email')), user)
     is_done = True
-    error_text = None
+    code_error = -1
     if not is_done:
-        error_text = "Error text"
+        code_error = 0
 
     return jsonify({'is_done': is_done,
-                    'error_text': error_text})
+                    'code_error': code_error})
 
 
 @app.route("/confirm_user", methods=['POST'])

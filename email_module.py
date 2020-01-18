@@ -1,8 +1,8 @@
 import smtplib
 from random import randint
-
+from confidential_data import PASSWORD
 sender = 'postmaster@sandbox600176f7c3a847a88dd5ad926c534a9e.mailgun.org'
-sender_password = '7e95f9ed54cecd6bdde64f67e8d6065a-0a4b0c40-5a4003e7'
+sender_password = PASSWORD
 
 server = 'smtp.mailgun.org', 587
 smtpObj = smtplib.SMTP(server[0], server[1])
